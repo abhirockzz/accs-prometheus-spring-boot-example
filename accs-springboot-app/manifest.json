@@ -1,0 +1,6 @@
+{
+"runtime":{
+"majorVersion":"8"
+},
+"command":"java -jar accs-spring-boot-hello-world.jar --server.port=$PORT --endpoints.prometheus.sensitive=false --endpoints.prometheus.enabled=true --endpoints.metrics.sensitive=false"
+}

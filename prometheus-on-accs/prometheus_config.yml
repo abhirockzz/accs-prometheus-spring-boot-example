@@ -1,0 +1,13 @@
+# my global config
+global:
+  scrape_interval:     5s
+  evaluation_interval: 10s
+
+scrape_configs:
+
+- job_name: accs-springboot-app-monitor-job
+  metrics_path: /prometheus
+  scheme: https
+  static_configs:
+    - targets:
+      - SpringBootOnACCS-ocloud109.apaas.us2.oraclecloud.com
